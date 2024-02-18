@@ -7,11 +7,18 @@ int main() {
     int row = 1;
     while (row<=n)
     {
-        int col = 1;
-        char ch = 'A'+row-1;
-        while (col<=row)
+        //space print kar lo
+        int space = row-1;
+        while (space)
         {
-            cout<<ch<<" ";
+            cout<<" ";
+            space--;
+        }
+        //star print kar lo
+        int col = 1;
+        while (col<=(n-row+1))
+        {
+            cout<<"*";
             col++;
         }
         cout<<endl;

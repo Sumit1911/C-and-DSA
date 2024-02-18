@@ -5,13 +5,13 @@ int main() {
     int n;
     cin>>n;
     int row = 1;
+
     while (row<=n)
     {
         int col = 1;
-        char ch = 'A'+row-1;
-        while (col<=row)
+        while (col<=(n-row+1))
         {
-            cout<<ch<<" ";
+            cout<<"*";
             col++;
         }
         cout<<endl;
